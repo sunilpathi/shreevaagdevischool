@@ -82,7 +82,7 @@ aria-expanded="false">
 <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
 <a href="admissions.html"
 class="btn admission-btn rounded-pill px-4">
-Admissions
+Admissions Enquiry
 </a>
 </li>
 
@@ -95,14 +95,22 @@ Admissions
 
 <!-- ================= HERO SECTION ================= -->
 <section class="hero-section">
+
 <div class="container">
 
-<div class="row align-items-center min-vh-100">
+<div class="row align-items-center hero-row">
 
 <!-- LEFT CONTENT -->
 <div class="col-lg-6 order-2 order-lg-1 hero-content" data-aos="fade-right">
 
-<h1>Shaping Future Leaders With Excellence</h1>
+<div class="hero-badge">
+⭐ Admissions Open 2026–27
+</div>
+
+<h1>
+Your Dreams Start With 
+<span>Shree Vaagdevi High School</span>
+</h1>
 
 <p>
 Providing quality education, discipline, innovation, and values 
@@ -110,6 +118,7 @@ to empower young minds for a brighter future.
 </p>
 
 <div class="hero-buttons">
+
 <a href="about.html" class="btn primary-btn">
 Explore More
 </a>
@@ -117,18 +126,49 @@ Explore More
 <a href="admissions.html" class="btn secondary-btn">
 Get Admission
 </a>
+
 </div>
 
 </div>
+
 
 <!-- RIGHT IMAGE -->
-<div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-left">
+<div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
 
 <div class="hero-image-wrapper">
 
-<img src="Assets/mainbanner-removebg-preview.png" alt="Student" class="hero-student-img">
+<!-- TOPPER CARD -->
+<div class="topper-card">
 
-<!-- IMAGE MASK -->
+    <div class="topper-icon">
+        🏆
+    </div>
+
+    <div class="topper-info">
+
+        <div class="topper-badge">
+            SSC 10th Performer
+        </div>
+
+        <h4>
+            Congratulations Champion 🎉
+        </h4>
+
+        <p>
+            Outstanding SSC Board Examination Results.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- IMAGE -->
+<img 
+src="Assets/mainbanner-removebg-preview.png" 
+alt="Founder Congratulating Student" 
+class="hero-student-img">
+
+<!-- GLOW EFFECT -->
 <div class="image-mask"></div>
 
 </div>
@@ -321,7 +361,7 @@ PARENT TESTIMONIALS
 </h6>
 
 <h2>
-What Parents Say About <span>Shree Vaagdevi High School</span>
+<span>What Parents Say About Shree Vaagdevi High School</span>
 </h2>
 
 <p>
@@ -375,6 +415,107 @@ Parents sharing their valuable experiences with our school environment.
 </div>
 
 </div>
+
+</div>
+</section>
+
+<!-- ================= OUR BRANCHES ================= -->
+<section class="branches-section py-5" id="branches">
+
+<div class="container">
+
+    <!-- SECTION TITLE -->
+    <div class="section-title text-center mb-5">
+
+        <h2>Our Branches</h2>
+
+        <p>
+            Providing quality education through our modern campuses.
+        </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <!-- MAIN BRANCH -->
+        <div class="col-lg-6">
+
+            <div class="branch-card h-100">
+
+                <!-- IMAGE -->
+                <div class="branch-img">
+
+                    <img 
+                    src="Assets/mainbranch.jpeg" 
+                    alt="Main Branch">
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="branch-content">
+
+                    <h3>
+                        📍 Main Branch 
+                        <span>(Spark Vista)</span>
+                    </h3>
+
+                    <p>
+                        H.No 11-2, Opp HP Petrol Pump,<br>
+                        Gandigudem Road, GHMC Division No 272,<br>
+                        Bollaram, Sangareddy Dist.
+                    </p>
+
+                    <a href="#contact" class="branch-btn">
+                        View Location
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BRANCH 2 -->
+        <div class="col-lg-6">
+
+            <div class="branch-card h-100">
+
+                <!-- IMAGE -->
+                <div class="branch-img">
+
+                    <img 
+                    src="Assets/branch1.jpeg" 
+                    alt="Branch-1">
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="branch-content">
+
+                    <h3>
+                        📍 Branch-1 
+                        <span>(Spark Bloom)</span>
+                    </h3>
+
+                    <p>
+                        H.No 11-177/B,<br>
+                        Opp Old Santhosh Theater,<br>
+                        IDA Bollaram Road.
+                    </p>
+
+                    <a href="#contact" class="branch-btn">
+                        View Location
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 </section>
@@ -496,6 +637,16 @@ class="form-control custom-input" required>
 </select>
 </div>
 
+<div class="mb-4">
+<select name="Class Applying For" 
+class="form-control custom-input" required>
+
+<option value="">Branch</option>
+<option>Main Branch-Spark Vista(Near hp petrolpump, GHMC Division No-272, Bollaram)</option>
+<option>Branch 1-Spark Bloom(Opposite Old Santhosh Theater,IDA Bollaram Road)</option>
+</select>
+</div>
+
 <button type="submit" class="submit-btn">
 Apply For Admission
 </button>
@@ -512,68 +663,110 @@ Apply For Admission
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer-section" id="contact">
+
 <div class="container">
-<div class="row g-4">
 
-<!-- ABOUT -->
-<div class="col-lg-4">
-<h5>About School</h5>
-<p>
-Shree Vaagdevi High School provides quality education with discipline, innovation, and values to shape bright future leaders.
-</p>
+<div class="footer-grid">
+
+    <!-- ABOUT -->
+    <div class="footer-about">
+
+        <h5>About School</h5>
+
+        <p>
+        Shree Vaagdevi High School provides quality education with discipline,
+        innovation, and values to shape bright future leaders.
+        </p>
+
+    </div>
+
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links-box">
+
+        <h5>Quick Links</h5>
+
+        <ul class="footer-links">
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="academics.html">Academics</a></li>
+
+            <li><a href="ourgallery.html">Gallery</a></li>
+
+            <li><a href="admissions.html">Admissions</a></li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+
+        <h5>Contact</h5>
+
+        <div class="branches-wrapper">
+
+            <!-- MAIN BRANCH -->
+            <div class="branch-box">
+
+                <h6>📍 Main Branch <span>(Spark Vista)</span></h6>
+
+                <p>
+                H.No 11-2, Opp HP Petrol Pump,<br>
+                Gandigudem Road, GHMC Division No 272,<br>
+                Bollaram, Sangareddy Dist.
+                </p>
+
+                <p class="email-line">
+                 <i class="fas fa-envelope"></i>
+                 <span>shreevaagdevischool@gmail.com</span>
+                </p>
+
+                <p>
+                📞 +91 9966560003<br>
+                📞 +91 9966560004
+                </p>
+
+            </div>
+
+
+            <!-- BRANCH 2 -->
+            <div class="branch-box">
+
+                <h6>📍 Branch-1 <span>(Spark Bloom)</span></h6>
+
+                <p>
+                H.No 11-177/B,<br>
+                Opp Old Santhosh Theater,<br>
+                IDA Bollaram Road.
+                </p>
+
+                <p class="email-line">
+               <i class="fas fa-envelope"></i>
+               <span>shreevaagdevihighschool@gmail.com</span>
+                </p>
+
+                <p>
+                📞 +91 7794023332<br>
+                📞 +91 7794053332
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
-<!-- QUICK LINKS -->
-<div class="col-lg-4">
-<h5>Quick Links</h5>
-
-<ul class="footer-links">
-
-<li>
-<a href="about.html">About</a>
-</li>
-
-<li>
-<a href="academics.html">Academics</a>
-</li>
-
-<li>
-<a href="ourgallery.html">Gallery</a>
-</li>
-
-<li>
-<a href="admissions.html">Admissions</a>
-</li>
-
-</ul>
-
-</div>
-
-<!-- CONTACT -->
-<div class="col-lg-4">
-<h5>Contact</h5>
-
-<p>
-📍 I.D.A Bollaram, Sangareddy, Telangana
-</p>
-
-<p>
-📧 shreevaagdevischool@gmail.com
-</p>
-
-<p>
-📞 +91 9966560003, 9966560004
-</p>
-
-</div>
-
-</div>
 
 <!-- SOCIAL ICONS -->
 <div class="social-icons text-center mt-4">
 
 <a href="https://wa.me/919966560003?text=Hello%20Shree%20Vaagdevi%20High%20School,%0A%0AI%20would%20like%20to%20know%20more%20about%20the%20admission%20process,%20fee%20structure,%20and%20available%20classes%20for%20my%20child.%20Kindly%20share%20the%20details.%0A%0AThank%20you." target="_blank">
-    <i class="fab fa-whatsapp"></i>
+<i class="fab fa-whatsapp"></i>
 </a>
 
 <a href="https://www.facebook.com/shreevaagdevihighschool/videos/4667110823575058/?rdid=TBUMGcWnpB7B1SG6" target="_blank">
@@ -593,6 +786,7 @@ Shree Vaagdevi High School provides quality education with discipline, innovatio
 </a>
 
 </div>
+
 
 <!-- COPYRIGHT -->
 <div class="text-center mt-4">
