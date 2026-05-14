@@ -379,8 +379,8 @@ are our greatest achievements.
 
 <div class="video-card">
 
-<video controls poster="Assets/video-thumb1.jpg">
-<source src="Assets/VID-20260506-WA0007.mp4" type="video/mp4">
+<video controls preload="metadata">
+    <source src="Assets/VID-20260506-WA0007.mp4" type="video/mp4">
 </video>
 
 <div class="video-content">
@@ -399,8 +399,8 @@ Hear how our school helped students grow academically and personally.
 
 <div class="video-card">
 
-<video controls poster="Assets/video-thumb2.jpg">
-<source src="Assets/VID-20260506-WA0008.mp4" type="video/mp4">
+<video controls preload="metadata">
+    <source src="Assets/VID-20260506-WA0008.mp4" type="video/mp4">
 </video>
 
 <div class="video-content">
@@ -466,8 +466,10 @@ Parents sharing their valuable experiences with our school environment.
                         Bollaram, Sangareddy Dist.
                     </p>
 
-                    <a href="#contact" class="branch-btn">
-                        View Location
+                    <a href="https://maps.google.com/?q=Shree+Vaagdevi+High+School+Bollaram+Hyderabad" 
+                    target="_blank" 
+                    class="branch-btn">
+                    View Location
                     </a>
 
                 </div>
@@ -505,9 +507,11 @@ Parents sharing their valuable experiences with our school environment.
                         IDA Bollaram Road.
                     </p>
 
-                    <a href="#contact" class="branch-btn">
-                        View Location
-                    </a>
+                    <a href="https://www.google.com/maps/place/Shree+Vaagdevi+School/@17.5514784,78.3506826,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb8d9d7a6ae347:0x3c6df2159d3977ad!8m2!3d17.5514784!4d78.3506826!16s%2Fg%2F11z7cs0jm8?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D" 
+                    target="_blank" 
+                    class="branch-btn">
+                    View Location
+                   </a>
 
                 </div>
 
@@ -546,19 +550,30 @@ with quality education, discipline, and innovation.
 <!-- MAIN ROW -->
 <div class="row g-4 align-items-stretch mt-4">
 
-<!-- LEFT MAP -->
-<div class="col-lg-6" data-aos="fade-right">
+<!-- ================= LEFT CARD ================= -->
+<div class="col-lg-6 d-flex" data-aos="fade-right">
 
-<div class="map-card h-100">
+<div class="map-card w-100">
 
+<!-- TITLE -->
 <div class="map-title">
-<h4>Visit Our Campus</h4>
+
+<h4>Visit Our Campuses</h4>
+
 <p>
-Shree Vaagdevi High School, I.D.A Bollaram, Sangareddy, Telangana
+Explore both branches of school.
 </p>
+
 </div>
 
-<div class="map-wrapper">
+<!-- BRANCH 1 -->
+<div class="branch-location-card">
+
+<div class="branch-heading">
+📍 Main Branch <span>(Spark Vista)</span>
+</div>
+
+<div class="small-map">
 
 <iframe 
 src="https://maps.google.com/maps?q=SHREE%20VAAGDEVI%20HIGH%20SCHOOL%20Bollaram%20Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -570,12 +585,33 @@ loading="lazy">
 
 </div>
 
+<!-- BRANCH 2 -->
+<div class="branch-location-card mt-3">
+
+<div class="branch-heading">
+📍 Branch-1 <span>(Spark Bloom)</span>
 </div>
 
-<!-- RIGHT FORM -->
-<div class="col-lg-6" data-aos="fade-left">
+<div class="small-map">
 
-<div class="admission-form-card h-100">
+<!-- EXACT GOOGLE MAP IFRAME -->
+<iframe 
+src="https://maps.google.com/maps?q=17.5514784,78.3506826&z=17&output=embed"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= RIGHT FORM CARD ================= -->
+<div class="col-lg-6 d-flex" data-aos="fade-left">
+
+<div class="admission-form-card w-100">
 
 <div class="form-title">
 
@@ -589,37 +625,43 @@ Fill out the form and our team will contact you shortly.
 
 <form action="https://formsubmit.co/shreevaagdevischool@gmail.com" method="POST">
 
-<!-- HIDDEN -->
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="New Admission Enquiry">
 
-<!-- INPUTS -->
 <div class="mb-3">
+
 <input type="text" 
 name="Parent Name" 
 class="form-control custom-input" 
 placeholder="Parent Name" required>
+
 </div>
 
 <div class="mb-3">
+
 <input type="text" 
 name="Student Name" 
 class="form-control custom-input" 
 placeholder="Student Name" required>
+
 </div>
 
 <div class="mb-3">
+
 <input type="tel" 
 name="Mobile Number" 
 class="form-control custom-input" 
 placeholder="Mobile Number" required>
+
 </div>
 
-<div class="mb-4">
+<div class="mb-3">
+
 <select name="Class Applying For" 
 class="form-control custom-input" required>
 
 <option value="">Class Applying For</option>
+
 <option>Nursery</option>
 <option>LKG</option>
 <option>UKG</option>
@@ -635,16 +677,26 @@ class="form-control custom-input" required>
 <option>10th Class</option>
 
 </select>
+
 </div>
 
 <div class="mb-4">
-<select name="Class Applying For" 
+
+<select name="Branch" 
 class="form-control custom-input" required>
 
 <option value="">Branch</option>
-<option>Main Branch-Spark Vista(Near hp petrolpump, GHMC Division No-272, Bollaram)</option>
-<option>Branch 1-Spark Bloom(Opposite Old Santhosh Theater,IDA Bollaram Road)</option>
+
+<option>
+Main Branch-Spark Vista(Near hp petrolpump, GHMC Division No-272, Bollaram)
+</option>
+
+<option>
+Branch 1-Spark Bloom(Opposite Old Santhosh Theater,IDA Bollaram Road)
+</option>
+
 </select>
+
 </div>
 
 <button type="submit" class="submit-btn">

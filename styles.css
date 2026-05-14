@@ -1171,18 +1171,20 @@ p{
 }
 
 /* ================= ADMISSION + CONTACT ================= */
+
 .admission-contact-section{
     background:linear-gradient(to bottom,#f4f7ff,#ffffff);
     position:relative;
     overflow:hidden;
 }
 
-/* SECTION TITLE */
+/* ================= SECTION HEADER ================= */
+
 .section-header{
     margin-bottom:20px;
 }
 
-.section-header .section-subtitle{
+.section-subtitle{
     color:var(--accent);
     letter-spacing:2px;
     font-weight:700;
@@ -1205,16 +1207,17 @@ p{
     font-size:17px;
 }
 
-/* COMMON CARD */
+/* ================= COMMON CARD ================= */
+
 .map-card,
 .admission-form-card{
-    background:white;
+    background:#fff;
     border-radius:30px;
-    padding:30px;
-    height:100%;
+    padding:28px;
+    width:100%;
     box-shadow:0 20px 50px rgba(0,0,0,0.08);
     border:1px solid rgba(0,0,0,0.05);
-    transition:0.4s;
+    transition:0.4s ease;
 }
 
 .map-card:hover,
@@ -1222,43 +1225,90 @@ p{
     transform:translateY(-6px);
 }
 
-/* TITLES */
-.map-title h4,
+/* BOTH SAME HEIGHT */
+
+.map-card,
+.admission-form-card{
+    height:100%;
+}
+
+/* ================= MAP CARD ================= */
+
+.map-title h4{
+    color:var(--primary);
+    font-weight:700;
+    margin-bottom:8px;
+    font-size:28px;
+}
+
+.map-title p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:22px;
+}
+
+/* BRANCH BOX */
+
+.branch-location-card{
+    background:#f7f9ff;
+    border-radius:20px;
+    padding:16px;
+    border:1px solid rgba(0,0,0,0.05);
+}
+
+/* BRANCH TITLE */
+
+.branch-heading{
+    font-size:18px;
+    font-weight:700;
+    color:var(--primary);
+    margin-bottom:14px;
+}
+
+.branch-heading span{
+    color:var(--accent);
+}
+
+/* SMALL MAP */
+
+.small-map{
+    width:100%;
+    height:140px;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.small-map iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+/* ================= FORM ================= */
+
 .form-title h4{
     color:var(--primary);
     font-weight:700;
     margin-bottom:10px;
 }
 
-.map-title p,
 .form-title p{
     color:#666;
     line-height:1.7;
-    margin-bottom:25px;
-}
-
-/* MAP */
-.map-wrapper{
-    overflow:hidden;
-    border-radius:25px;
-    height:420px;
-}
-
-.map-wrapper iframe{
-    width:100%;
-    height:100%;
-    border:0;
+    margin-bottom:24px;
+    font-size:15px;
 }
 
 /* INPUTS */
+
 .custom-input{
-    height:58px;
+    height:56px;
     border-radius:16px;
     border:1px solid #dbe2f0;
     padding:0 18px;
     font-size:15px;
-    transition:0.3s;
     box-shadow:none !important;
+    transition:0.3s;
 }
 
 .custom-input:focus{
@@ -1267,16 +1317,17 @@ p{
 }
 
 /* BUTTON */
+
 .submit-btn{
     width:100%;
-    height:58px;
+    height:56px;
     border:none;
     border-radius:18px;
     background:linear-gradient(135deg,var(--primary),var(--secondary));
-    color:white;
+    color:#fff;
     font-weight:600;
     font-size:17px;
-    transition:0.4s;
+    transition:0.4s ease;
 }
 
 .submit-btn:hover{
@@ -1284,20 +1335,26 @@ p{
     box-shadow:0 15px 30px rgba(22,33,62,0.2);
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
+
 @media(max-width:991px){
 
     .section-header h2{
         font-size:38px;
     }
 
-    .map-wrapper{
-        height:350px;
+    .map-card,
+    .admission-form-card{
+        padding:24px;
     }
 
 }
 
 @media(max-width:768px){
+
+    .section-subtitle{
+        font-size:20px;
+    }
 
     .section-header h2{
         font-size:30px;
@@ -1309,20 +1366,33 @@ p{
 
     .map-card,
     .admission-form-card{
-        padding:22px;
-        border-radius:22px;
+        border-radius:24px;
+        padding:20px;
     }
 
-    .map-wrapper{
-        height:280px;
+    .map-title h4{
+        font-size:24px;
+    }
+
+    .branch-heading{
+        font-size:16px;
+    }
+
+    .small-map{
+        height:120px;
     }
 
     .custom-input{
+        height:52px;
+        font-size:14px;
+    }
+
+    .submit-btn{
         height:54px;
+        font-size:15px;
     }
 
 }
-
 
 /* ================= FOOTER ================= */
 
